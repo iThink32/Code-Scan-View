@@ -13,3 +13,7 @@ self.viewCamera.stopScanAnimation()
 ```
 
 where viewCamera is your code view
+
+refer the screen shot below:
+
+![alt text](https://github.com/iThink32/Code-Scan-View/blob/master/Screen%20Shot%202017-12-15%20at%206.25.13%20PM%201.png)
