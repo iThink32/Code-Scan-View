@@ -58,6 +58,11 @@ class CodeScanView: UIView,CAAnimationDelegate {
         animation.delegate = self
         animation.duration = 1
         animation.repeatCount = 0
+        """
+        this is because a CABasicAnimation creates a presentation layer(CALayer) and animates it after which it is removed
+        by ios so to preserve the state after the animation you have to set the end result of the animation on the actual
+        layer.THIS STEP IS VERY IMP PLS DO NOT REMOVE IT !
+        """
         self.layer.borderColor = toColor
         return animation
     }
